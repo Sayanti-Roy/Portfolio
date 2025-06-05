@@ -1,0 +1,39 @@
+.section {
+    padding: 100px 20px;
+    min-height: 100vh;
+    max-width: 1000px;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #1a1a1a;
+}
+
+p, li {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+a.cta-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 12px 24px;
+    background-color: #007acc;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+a.cta-button:hover {
+    background-color: #005f99;
+}
+
+.accent {
+    color: #007acc;
+}

@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+<div id="home">
+    {% include "sections/home.html" %}
+</div>
+
+<div id="about">
+    {% include "sections/about.html" %}
+</div>
+
+<div id="projects">
+    {% include "sections/projects.html" %}
+</div>
+
+<div id="resume">
+    {% include "sections/resume.html" %}
+</div>
+
+<div id="contact">
+    {% include "sections/contact.html" %}
+</div>
+
+{% endblock %}

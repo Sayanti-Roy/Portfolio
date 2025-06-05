@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/contact.css') }}">
+<section class="section contact">
+    <h2>Contact Me</h2>
+
+    <form method="POST" action="{{ url_for('contact') }}#contact" class="contact-form">
+        <label>Name</label>
+        <input type="text" name="name" required>
+
+        <label>Email (optional)</label>
+        <input type="email" name="email">
+
+        <label>Message</label>
+        <textarea name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+
+    <!-- Flash messages -->
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <ul class="flash-list">
+          {% for message in messages %}
+            <li>{{ message }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    {% endwith %}
+</section>
